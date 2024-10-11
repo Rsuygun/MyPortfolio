@@ -91,10 +91,10 @@ const Navbar = () => {
         <Link href="https://github.com/Rsuygun">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
+        <Link href="https://www.linkedin.com/in/ramazan-serhat-uygun-296801235/">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
+        <Link href="https://www.instagram.com/rsuygun?igsh=ZWdnOHc1eHA1bWd4">
           <Image src="/instagram.png" alt="" width={24} height={24} />
         </Link>
       </div>

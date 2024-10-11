@@ -24,18 +24,19 @@ const Homepage = () => {
           </h1>
           {/* Description */}
           <p className="md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            consectetur!
+            Kendimi Web Geliştirici olarak adlandırabilirim. Web alanında
+            yaptığım kendi projelerimi ve BTK Akademi ve Udemy gibi eğitim
+            siteleri üzerinden aldığım eğitimler eşliğinde yaptığım projeleri
+            GitHub ve LinkedIn hesaplarımda paylaşmaktayım. Web Geliştirme
+            alanında React, Next Js, Node Js, ASP.NET, Typescript ve Javascript
+            kullanarak web site tasarlayabilirim. Ayrıca MVC ve Mikroservis
+            Mimarilerine hakimim. Kendimi Web alanında geliştirmemim yanında
+            yapay zeka OOP alanında verilen görevleri ve hedeflediğim işleri
+            başarı ile yapabilmekteyim. Ayrıca R dilini kullanarak Veri analizi
+            ve Veri görselleştirme işlemlerini yapabilmekteyim. Bunların yanında
+            ReactNative teknolojisi ile mobil uygulama geliştirme
+            yapabilmekteyim.
           </p>
-          {/* Buttons */}
-          <div className=" flex gap-4">
-            <button className="p-4 rounded-lg ring-1 ring-gray-950 bg-gray-950 text-gray-300">
-              Projelerim
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-gray-950">
-              İletişim
-            </button>
-          </div>
         </div>
       </div>
     </motion.div>

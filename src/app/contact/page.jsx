@@ -4,16 +4,22 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
+  const [email, setEmail] = useState(""); 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const text = "Merhaba De";
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     setError(false);
     setSuccess(false);
+
+    // E-posta boşsa hata göster
+    if (!email) {
+      setError(true);
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -26,6 +32,7 @@ const ContactPage = () => {
         () => {
           setSuccess(true);
           form.current.reset();
+          setEmail(""); 
         },
         () => {
           setError(true);
@@ -65,32 +72,35 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-gray-100 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
           <span>Sayın Ramazan Serhat UYGUN,</span>
-          <textarea
-            rows={6}
+          <input
+            type="text"
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
           />
-          <span>My mail address is:</span>
+          <span>E-posta Adresim:</span>
           <input
             name="user_email"
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
+            onChange={(e) => setEmail(e.target.value)} // E-posta girişini takip et
           />
-          <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
-            Send
+          <span>Saygılarımla.</span>
+          <button className="bg-gray-600 rounded font-semibold text-gray-200 p-4">
+            Gönder
           </button>
-          {success && (
-            <span className="text-green-600 font-semibold">
-              Your message has been sent successfully!
+          {!email && (
+            <span className="text-red-600 font-semibold">
             </span>
           )}
-          {error && (
+          {email && success && (
+            <span className="text-green-600 font-semibold">
+            </span>
+          )}
+          {email && error && (
             <span className="text-red-600 font-semibold">
-              Something went wrong!
             </span>
           )}
         </form>

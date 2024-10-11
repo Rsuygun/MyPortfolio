@@ -32,17 +32,28 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BİYOGRAFİ</h1>
             {/* Biography Description */}
             <p className="text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-              rerum eum ducimus possimus nisi harum, dolorum provident deserunt
-              id dignissimos, facere tenetur fugit perferendis doloribus nam
-              nulla quas explicabo earum voluptates ab aperiam quod molestiae
-              distinctio. Sapiente harum officiis incidunt.
+              Merhaba! Ben Ramazan Serhat UYGUN, Bilgisayar Mühendisliği
+              öğrencisiyim. 2018 yılında Malatya Atatürk Sağlık Meslek
+              Lisesinden mezun olduktan sonra, bilgi ve becerilerimi geliştirmek
+              amacıyla 2020 yılında Recep Tayyip Erdoğan Üniversitesi Bilgisayar
+              Mühendisliği Bölümüne başladım. Şu anda 4. sınıf öğrencisi olarak
+              eğitimime devam ediyorum. Teknolojiye olan ilgim ve tutkum, HTML,
+              CSS, JavaScript, C# ve Java gibi çeşitli programlama dillerinde
+              kendimi geliştirmeme olanak tanıdı. Bunların yanı sıra ASP.NET
+              Core ve ASP.NET MVC frameworkleri üzeirnden projeler oluşturarak
+              proje yönetme ve C# becerilerimi pekiştirdim. SQL veri tabanları
+              üzerinden gerekli sorguları yazma becerilerimi geliştirdim.
+              React-Native teknolojisini kullanarak Expo-CLI ile proje
+              oluşturarak Android ve IOS uygulamaları yapma becerilerimi
+              geliştirdim. Özellikle web teknolojileri konusundaki deneyimimle
+              birlikte, kullanıcı dostu ve etkili çözümler üretmeye
+              odaklanıyorum. Projelerimde, problem çözme becerilerimi ve
+              yaratıcı düşünce yeteneğimi ön plana çıkartmaya çalışıyorum.
+              Eğitimim ve projelerimle birlikte, yazılım geliştirme alanındaki
+              bilgi birikimimi sürekli genişletiyor ve güncelliyorum. Hedefim,
+              sektörde kendimi sürekli geliştirerek, yeniliklere açık bir
+              profesyonel olmak ve teknoloji dünyasına katkıda bulunmaktır.
             </p>
-            {/* Biography Quote */}
-            <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-              atque.
-            </span>
             {/* Biography Scroll SVG*/}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -121,6 +132,12 @@ const AboutPage = () => {
                 C++
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-gray-950 text-gray-300 hover:bg-gray-300 hover:text-gray-950">
+                R
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-gray-950 text-gray-300 hover:bg-gray-300 hover:text-gray-950">
+                Matlab
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-gray-950 text-gray-300 hover:bg-gray-300 hover:text-gray-950">
                 React-Native
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-gray-950 text-gray-300 hover:bg-gray-300 hover:text-gray-950">
@@ -176,7 +193,7 @@ const AboutPage = () => {
               className="font-bold text-2xl"
             >
               DENEYİM
-              </motion.h1>
+            </motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div
               initial={{ x: "-300px" }}
@@ -189,20 +206,13 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Engineer
+                    Üniversite Kısmi Çalışma
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-gray-950 text-sm font-semibold">
-                    2024 - Present
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Apple
+                    Recep Tayyip Erdoğan Üniversitesinin Bilgi İşlem
+                    Departmanında İşletim Sistemleri üzerine kısmi çalışma
+                    fırsatım oldu.{" "}
                   </div>
                 </div>
                 {/* CENTER */}
@@ -232,20 +242,13 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                    Staj
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.{" "}
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-gray-950 text-sm font-semibold">
-                    2019 - 2024{" "}
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
+                    Staj dönemimde Dicle Üniversitesi üzerinden
+                    gerçekleştirdiğim stajımda mobil uygulama becerilerimi
+                    geliştirdim.{" "}
                   </div>
                 </div>
               </div>
@@ -255,16 +258,13 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelancer{" "}
+                    Üniversite Kısmi Çalışma{" "}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-gray-950 text-sm font-semibold">
-                    2010 - 2019{" "}
+                    Recep Tayyip Erdoğan Üniversitenin Bilgi İşlem Departmanı
+                    Yazılım Bölümünde üniversite bünyesi için kullanılacak modül
+                    oluşturulmasında görev almaktayım.{" "}
                   </div>
                 </div>
                 {/* CENTER */}
